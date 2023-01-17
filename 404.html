@@ -1,2 +1,10 @@
 <h1>You spelt it wrong</h1>
-<a href="https://swiftinsg.org">Go to swiftinsg.org<a>
+<a id="link" href="https://swiftinsg.org">Go to swiftinsg.org<a>
+
+<script>
+  const splitURL = window.location.href.split("swifitinsg.org/)
+  const path = splitURL[splitURL.length - 1]
+
+  const e = document.getElementById("link")
+  e.href = "https://swiftinsg.org/" + path
+</script>
